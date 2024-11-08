@@ -1,0 +1,93 @@
+/**
+* Styling for buttons
+*/
+
+/* button container style for centering */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centraliza verticalmente ocupando a altura total da tela */
+}
+
+/* button style */
+.rpgui-button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  overflow: hidden;
+  outline: none;
+  background: url(../assets/rpg/button.png) no-repeat center center;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-size: 100% 100%;
+  font-size: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  height: 60px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-right: 100px;
+}
+
+/* button hover */
+.rpgui-button.hover,
+.rpgui-button:hover {
+  background-image: url("../assets/rpg/button-hover.png");
+}
+
+/* button clicked */
+.rpgui-button.down,
+.rpgui-button:active {
+  background-image: url("../assets/rpg/button-down.png");
+}
+
+/* golden button style */
+.rpgui-button.golden {
+  background: url("../assets/rpg/button-golden.png") no-repeat center center;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-size: 100% 80%;
+  min-width: 140px;
+  height: 60px;
+  padding-top: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+  overflow: visible;
+}
+
+/* golden button hover */
+.rpgui-button.golden.hover,
+.rpgui-button.golden:hover {
+  background-image: url("../assets/rpg/button-golden-hover.png");
+}
+
+/* golden button clicked */
+.rpgui-button.golden.down,
+.rpgui-button.golden:active {
+  background-image: url("../assets/rpg/button-golden-down.png");
+}
+
+.rpgui-button.golden:before {
+  display: inline-block;
+  content: "";
+  width: 34px;
+  height: 110%;
+  background: transparent url("../assets/rpg/button-golden-left.png") no-repeat right center;
+  background-size: 100% 100%;
+  position: relative;
+  left: -46px;
+  margin-top: -5%;
+}
+
+.rpgui-button.golden:after {
+  display: inline-block;
+  content: "";
+  width: 34px;
+  height: 110%;
+  background: transparent url("../assets/rpg/button-golden-right.png") no-repeat left center;
+  background-size: 100% 100%;
+  position: relative;
+  right: -46px;
+  margin-top: -5%;
+}
